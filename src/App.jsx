@@ -5,7 +5,7 @@ import AuthLayout from "./_auth/AuthLayout";
 import SignInForm from "./_auth/forms/SignInForm";
 import SignUpForm from "./_auth/forms/SignUpForm";
 import RootLayout from "./root/RootLayout";
-import Home from "./root/Home";
+import Home from "./root/page/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div data-theme="caramellatte" className="bg-base-100 text-base-content min-h-screen">
-      <main className="flex h-screen text-white">
+      <main className="flex h-screen ">
         <Routes>
           {/* Public Routes */}
           <Route element={<AuthLayout />}>
